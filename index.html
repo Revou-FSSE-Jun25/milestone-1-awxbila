@@ -16,13 +16,17 @@
 <body>
     <header>
         <nav class="navbar">
+            <input type="checkbox" id="hamburger-toggle" />
             <div class="container nav-wrapper">
                 <a href="#" class="logo">Nabilah</a>
+                <label for="hamburger-toggle" class="hamburger-menu">
+                    <span></span>
+                </label>
                 <div class="menu-wrapper">
                     <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link active">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Portfolio</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                        <li><a href="#profile" class="menu-link active">Home</a></li>
+                        <li><a href="#experiance" class="menu-link">Portfolio</a></li>
+                        <li><a href="#contact" class="menu-link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="menu-toggle bx bxs-list-alt">
@@ -34,21 +38,29 @@
 
     <script src="assets/js/main.js"></script>
 
-     <section class="profile">
-    <div class="profile-text">
-      <h2>Hello, I’m</h2>
-      <h1>Nabilah Nur Hazimah</h1>
-      <p>Business Development</p>
-      <a href="#contact" class="btn">Contact Me</a>
+     <section id="profile" class="profile">
+        <div class="container">
+        <div class="profile-content">
+        <div class="profile-text">
+            <h2>Hello, I’m</h2>
+            <h1>Nabilah Nur Hazimah</h1>
+            <p>Business Development</p>
+            <a href="#contact" class="btn">Contact Me</a>
     </div>
     <div class="profile-img">
-      <img src="img/aku.jpg" alt="Profile Photo" />
+      <img src="assets/img/aku.png" alt="Profile Photo" />
     </div>
   </section>
 
   <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I am a graduate of the Bachelor’s program in Mechanical and Biosystems Engineering who was actively involved in organizational and entrepreneurial activities during my studies. Currently, I am developing my competencies in Business Development through intensive training at MySkill and internship simulations at Forage. These programs help me learn market development strategies, sales planning, and client relationship management. In the future, I aspire to pursue a career as an Account Manager or Business Development Specialist. I believe my organizational experience, independent business management, and professional training will serve as strong assets to contribute meaningfully in the workplace. Additionally, I have a keen interest in Software Engineering. My thesis focused on developing a web application for detecting strawberry leaf diseases using machine learning. I have further pursued this interest by completing the Fundamental Software Engineering course at RevoU, equipping me with technical skills that complement my expertise in business and technology.</p>
+    <div class="container">
+        <div class="about-content">
+             <div class="about-img">
+             <img src="assets/img/me.jpg" alt="About me" />
+                <div class="about-text">
+                  <h2 class="about-title">About Me</h2>
+                  <h3 class="about-subtitle">Business Development</h3>
+                   <p>I am a graduate of the Bachelor’s program in Mechanical and Biosystems Engineering who was actively involved in organizational and entrepreneurial activities during my studies. Currently, I am developing my competencies in Business Development through intensive training at MySkill and internship simulations at Forage. These programs help me learn market development strategies, sales planning, and client relationship management. In the future, I aspire to pursue a career as an Account Manager or Business Development Specialist. I believe my organizational experience, independent business management, and professional training will serve as strong assets to contribute meaningfully in the workplace. Additionally, I have a keen interest in Software Engineering. My thesis focused on developing a web application for detecting strawberry leaf diseases using machine learning. I have further pursued this interest by completing the Fundamental Software Engineering course at RevoU, equipping me with technical skills that complement my expertise in business and technology.</p>
   </section>
 
   <section id="skills" class="skills">
@@ -107,16 +119,16 @@
     <!--galeri experiance, fotonya nyusul dan masih bisa nambah-->
     <div class="image-grid">
         <div class="image-item">
-          <img src="#.jpg" alt="Image 1">
+          <img src="#.png" alt="Image 1">
         </div>
         <div class="image-item">
-          <img src="#.jpg" alt="Image 2">
+          <img src="#.png" alt="Image 2">
         </div>
         <div class="image-item">
-          <img src="#.jpg" alt="Image 3">
+          <img src="#.png" alt="Image 3">
         </div>
         <div class="image-item">
-          <img src="#.jpg" alt="Image 4">
+          <img src="#.png" alt="Image 4">
         </div>
     </div>
   </section>

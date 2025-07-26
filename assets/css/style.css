@@ -8,8 +8,8 @@
 body{
     background-color: var(--body-color);
     font-family: var(--main-font);
+    padding-top: 6.4rem;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -17,21 +17,31 @@ body{
     list-style: none;
     text-decoration: none;
 }
-section{
-    margin-top: 200px;
-}
 .container{
-    max-width: 1500px;
+  width: 100%;
+  max-width: 110rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .navbar{
-    background-color: #965555;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.05);
+    position: fixed
+}
+#hamburger-toggle{
+    display: none;
 }
 .navbar .nav-wrapper{
-    position: relative;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 3.2rem;
 }
 .nav-wrapper .menu-toggle{
     display: none;
@@ -46,7 +56,58 @@ section{
 .nav-wrapper .menu-wrapper .menu{
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 3.2rem;
+}
+.menu a{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    padding: 0.8rem 0;
+    transition: color 0.3s ease;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.2rem;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(59, 59, 59);
+  transition: width 0.3s ease;
+}
+.menu a:hover {
+  color: var(--main-color);
+}
+.menu a:hover::after {
+  width: 100%;
+}
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+.hamburger-menu span,
+.hamburger-menu span::before,
+.hamburger-menu span::after {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: rgb(61, 61, 61);
+  border-radius: 0.3rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.hamburger-menu span::before,
+.hamburger-menu span::after {
+  content: "";
+  position: absolute;
+}
+.hamburger-menu span::before {
+  top: -0.8rem;
+}
+.hamburger-menu span::after {
+  top: 0.8rem;
 }
 .menu-wrapper .menu .menu-link{
     font-size: 1.25rem;
@@ -102,14 +163,73 @@ section{
     color: #dbdbdb;
     }
 }
-
+.profile{
+    padding: 8rem 0;
+    background-color: transparent;
+}
+.profile-content {
+  display: flex;
+  align-items: center;
+}
 .profile .profile-text{
     font-family: var(--main-font);
     color: var(--main-color);
+    flex: 1.2;
+    margin-right: 6rem;
+    font-size: 1.2rem;
+}
+.profile-text p{
+  color: #989898;
+  padding: 2rem;
+}
+.profile-img{
+    flex: 1;
+}
+.profile-img img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+}
+.btn{
+  display: inline-block;
+  background-color: rgb(111, 111, 179);
+  color: black;
+  padding: 1.2rem 2.8rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}  
+.btn:hover{
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.8rem 2rem rgba(52, 152, 219, 0.3);
 }
 .about{
+    padding: 8rem 0;
+    background-color: transparent;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+}
+.about-img{
+    flex: 1.2;
+}
+.about-img img{
+    max-width: 500px;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+}
+.about-text{
     font-family: var(--main-font);
     color: var(--main-color);
+    flex: 1;
+    margin-right: 6rem;
+}
+.about-title{
+    font-size: 1.5rem;
 }
 .section{
     font-family: var(--main-font);
@@ -118,6 +238,16 @@ section{
 .skills{
     font-family: var(--main-font);
     color: var(--main-color);
+}
+.skills li{
+  display: inline-block;
+  background-color: rgb(111, 111, 179);
+  color: black;
+  padding: 1.2rem 2.8rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .language-bar .language-title{
     font-family: var(--main-font);
