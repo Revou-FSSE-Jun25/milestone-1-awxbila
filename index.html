@@ -18,7 +18,7 @@
         <nav class="navbar">
             <input type="checkbox" id="hamburger-toggle" />
             <div class="container nav-wrapper">
-                <a href="#" class="logo">Nabilah</a>
+                <a class="logo">Nabilah</a>
                 <label for="hamburger-toggle" class="hamburger-menu">
                     <span></span>
                 </label>
@@ -45,7 +45,7 @@
             <h2>Hello, I’m</h2>
             <h1>Nabilah Nur Hazimah</h1>
             <p>Business Development</p>
-            <a href="#contact" class="btn">Contact Me</a>
+            <a href="https://www.linkedin.com/in/abilanr/" class="btn">My LinkedIn</a>
     </div>
     <div class="profile-img">
       <img src="assets/img/aku.png" alt="Profile Photo" />
@@ -59,84 +59,162 @@
              <img src="assets/img/me.jpg" alt="About me" />
                 <div class="about-text">
                   <h2 class="about-title">About Me</h2>
-                  <h3 class="about-subtitle">Business Development</h3>
                    <p>I am a graduate of the Bachelor’s program in Mechanical and Biosystems Engineering who was actively involved in organizational and entrepreneurial activities during my studies. Currently, I am developing my competencies in Business Development through intensive training at MySkill and internship simulations at Forage. These programs help me learn market development strategies, sales planning, and client relationship management. In the future, I aspire to pursue a career as an Account Manager or Business Development Specialist. I believe my organizational experience, independent business management, and professional training will serve as strong assets to contribute meaningfully in the workplace. Additionally, I have a keen interest in Software Engineering. My thesis focused on developing a web application for detecting strawberry leaf diseases using machine learning. I have further pursued this interest by completing the Fundamental Software Engineering course at RevoU, equipping me with technical skills that complement my expertise in business and technology.</p>
   </section>
 
   <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Communication</li>
-      <li>Relationship Building</li>
-      <li>Problem Solving</li>
-      <li>Market & Industry Insight</li>
-      <li>Collaboration & Internal Coordination</li>
-    </ul>
+    <h2>My Skills</h2>
+    <!-- Skill 1 -->
+  <div class="skill">
+    <svg width="120" height="120">
+      <defs>
+        <linearGradient id="grad" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#00e0ff"/>
+          <stop offset="100%" stop-color="#7f00ff"/>
+        </linearGradient>
+      </defs>
+      <circle class="circle-bg" cx="60" cy="60" r="50"/>
+      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:90"/>
+      <text x="60" y="65" text-anchor="middle" class="value">4.5</text>
+    </svg>
+    <div class="label">Communication</div>
+  </div>
+  <!-- Skill 2 -->
+  <div class="skill">
+    <svg width="120" height="120">
+      <circle class="circle-bg" cx="60" cy="60" r="50"/>
+      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:80"/>
+      <text x="60" y="65" text-anchor="middle" class="value">4.0</text>
+    </svg>
+    <div class="label">Relationship Building</div>
+  </div>
+   <!-- Skill 3 -->
+  <div class="skill">
+    <svg width="120" height="120">
+      <circle class="circle-bg" cx="60" cy="60" r="50"/>
+      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:84"/>
+      <text x="60" y="65" text-anchor="middle" class="value">4.2</text>
+    </svg>
+    <div class="label">Problem Solving</div>
+  </div>
+   <!-- Skill 4 -->
+  <div class="skill">
+    <svg width="120" height="120">
+      <circle class="circle-bg" cx="60" cy="60" r="50"/>
+      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:80"/>
+      <text x="60" y="65" text-anchor="middle" class="value">4.0</text>
+    </svg>
+    <div class="label">Market & Industry Insight</div>
+  </div>
+   <!-- Skill 5 -->
+  <div class="skill">
+    <svg width="120" height="120">
+      <circle class="circle-bg" cx="60" cy="60" r="50"/>
+      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:90"/>
+      <text x="60" y="65" text-anchor="middle" class="value">4.5</text>
+    </svg>
+    <div class="label">Collaboration & Internal Coordination</div>
+  </div>
   </section>
 
   <div class="container">
+   <section id="performa" class="performa">
     <!-- Left: Language -->
-    <div class="section">
+     <div class="language">
       <h2>Language</h2>
-      <div class="language-bar">
-        <div class="language-title">
-          <span>Indonesian</span>
+      <div class="lang-skill">
+        <div class="label">
+          <span>Indonesia</span>
           <span>Fluent</span>
         </div>
-        <div class="bar Indonesian"></div>
+        <div class="bar">
+          <div class="fill" style="width: 100%;"></div>
+        </div>
       </div>
-      <div class="language-bar">
-        <div class="language-title">
+    <div class="lang-skill">
+        <div class="label">
           <span>English</span>
           <span>Good</span>
         </div>
-        <div class="bar English"></div>
+        <div class="bar">
+          <div class="fill" style="width: 80%;"></div>
+        </div>
       </div>
     </div>
      <!-- Right: Studies -->
-    <div class="section">
+     <div class="studies">
       <h2>Studies</h2>
+
       <div class="study-item">
-        <div class="study-icon"></div>
-        <div class="study-text">
-          <span><strong>IPB University</strong></span>
-          <span class="degree">2019</span>
+        <div class="icon"></div>
+        <div class="info">
+          <strong>IPB University</strong>
+          <p>2019</p>
         </div>
       </div>
     </div>
-  </div>
+    </section>
 
   <section id="experiance" class="experiance">
-    <h2>My Experiance</h2>
-        <span><strong>Organizational Experiance</strong></span>
-        <p>• Faculty Student Executive Board (BEM) – Business and Partnership Division: created over 15 promotional Instagram posts, managed visual designs, and took weekly meeting minutes for more than 6 months.</p>
-        <p>• Mechanical and Biosystems Engineering Student Association (Himateta) – Inventory and Entrepreneurship Division: managed cash flow records and handled external communications for benchmarking activities.</p>
-        <p>• Campus Orientation Committee (MPKMB 57) – Decoration Team: responsible for stage layout and sticker design according to the event theme.</p>
-        <span><strong>Independent Businesses</strong></span>
-        <p>• Digital product reseller: managed 5–20 orders per week, overseeing branding, marketing, and customer service.</p>
-        <p>• Online thrift shop: handled 5–10 orders per week, fully managing promotion through to customer service.</p>
-
-    <!--galeri experiance, fotonya nyusul dan masih bisa nambah-->
-    <div class="image-grid">
-        <div class="image-item">
-          <img src="#.png" alt="Image 1">
-        </div>
-        <div class="image-item">
-          <img src="#.png" alt="Image 2">
-        </div>
-        <div class="image-item">
-          <img src="#.png" alt="Image 3">
-        </div>
-        <div class="image-item">
-          <img src="#.png" alt="Image 4">
-        </div>
+    <h2>Organizational Experiance</h2>
+    <div class="cards">
+      <!-- Kartu 1 -->
+      <div class="card">
+        <img src="assets/img/bemf.jpg" alt="BEM">
+        <h3>Faculty Student Executive Board (BEM)</h3>
+        <p>Staff Business and Partnership Division (2020)</p>
+      </div>
+      <!-- Kartu 2 -->
+      <div class="card">
+        <img src="assets/img/hima.jpg" alt="HIMATETA">
+        <h3>Mechanical and Biosystems Engineering Student Association (Himateta)</h3>
+        <p>Staff Inventory and Entrepreneurship Division (2021)</p>
+      </div>
+    </div>
+       <h2>Volunteering</h2>
+    <div class="cards">
+      <!-- Kartu 1 -->
+      <div class="card">
+        <img src="assets/img/mpkmb.jpg" alt="store">
+        <h3>Campus Orientation Committee (MPKMB 57)</h3>
+        <p>Staff Design Decoration Branding (2020)</p>
+      </div>
+      <!-- Kartu 2 -->
+       <div class="card">
+        <img src="assets/img/mmd.jpg" alt="store">
+        <h3>Faculty Orientation Committee (TechnoF 57)</h3>
+        <p>Staff Multi Media and Decoration (2021)</p>
+      </div>
+      <!--Kartu 3-->
+      <div class="card">
+        <img src="assets/img/redsbim.jpg" alt="HIMATETA">
+        <h3>Redsbim (Webinars and Training on Business, Digital Marketing, and Stocks)</h3>
+        <p>Supervisor, Secretary (2021)</p>
+      </div>
+    </div>
+    <h2>independent Business</h2>
+    <div class="cards">
+      <!-- Kartu 1 -->
+      <div class="card">
+        <img src="assets/img/bilathrift.jpg" alt="thrift">
+        <h3>Online thrift shop (@bilathrift.id)</h3>
+        <p>Owner (2020)</p>
+      </div>      
+      <!-- Kartu 2 -->
+      <div class="card">
+        <img src="assets/img/tokoyaya.jpg" alt="store">
+        <h3>Digital product reseller (@toko_yaya)</h3>
+        <p>Owner (2025)</p>
+      </div>
     </div>
   </section>
 
    <section class="download-section">
-    <h1>Intrested In My Experiance</h1>
+    <div class="container">
+    <h1>Interested In My Experiance</h1>
     <p>Download My CV To Know More About Me</p>
-    <a href="cv.pdf" class="btn-download" download>Download CV</a>
+    <a href="cvku.pdf" class="btn-cv" download>Download CV</a>
+    </div>
   </section>
 
   <section id="contact" class="contact">
