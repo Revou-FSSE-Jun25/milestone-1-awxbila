@@ -1,235 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--import font-->
-    <style> 
-    @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght@300;400;600&display=swap');
-    </style>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!--boxicons-->
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <title>Personal Portofolio</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
+    <!-- meta description -->
+    <!-- meta keywords -->
+
+    <title>Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
     <header>
-        <nav class="navbar">
-            <input type="checkbox" id="hamburger-toggle" />
-            <div class="container nav-wrapper">
-                <a class="logo">Nabilah</a>
-                <label for="hamburger-toggle" class="hamburger-menu">
-                    <span></span>
-                </label>
-                <div class="menu-wrapper">
-                    <ul class="menu">
-                        <li><a href="#profile" class="menu-link active">Home</a></li>
-                        <li><a href="#experiance" class="menu-link">Portfolio</a></li>
-                        <li><a href="#contact" class="menu-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="menu-toggle bx bxs-list-alt">
-                </div>
-            </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="container nav-wrapper">
+          <a href="#" class="logo">Nabilah</a>
+          <input type="checkbox" id="hamburger-toggle" />
+          <label for="hamburger-toggle" class="hamburger-menu">
+            <span></span>
+          </label>
+          <div class="menu-wrapper">
+            <ul class="menu">
+              <li><a href="#profile" class="menu-link active">Home</a></li>
+              <li><a href="#experience" class="menu-link">Portfolio</a></li>
+              <li><a href="#contact" class="menu-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-toggle bx bxs-list-alt"></div>
+        </div>
+      </nav>
     </header>
 
-    <script src="assets/js/main.js"></script>
-
-     <section id="profile" class="profile">
+    <main>
+      <section id="profile" class="profile">
         <div class="container">
-        <div class="profile-content">
-        <div class="profile-text">
-            <h2>Hello, I’m</h2>
-            <h1>Nabilah Nur Hazimah</h1>
-            <p>Business Development</p>
-            <a href="https://www.linkedin.com/in/abilanr/" class="btn">My LinkedIn</a>
-    </div>
-    <div class="profile-img">
-      <img src="assets/img/aku.png" alt="Profile Photo" />
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-        <div class="about-content">
-             <div class="about-img">
-             <img src="assets/img/me.jpg" alt="About me" />
-                <div class="about-text">
-                  <h2 class="about-title">About Me</h2>
-                   <p>I am a graduate of the Bachelor’s program in Mechanical and Biosystems Engineering who was actively involved in organizational and entrepreneurial activities during my studies. Currently, I am developing my competencies in Business Development through intensive training at MySkill and internship simulations at Forage. These programs help me learn market development strategies, sales planning, and client relationship management. In the future, I aspire to pursue a career as an Account Manager or Business Development Specialist. I believe my organizational experience, independent business management, and professional training will serve as strong assets to contribute meaningfully in the workplace. Additionally, I have a keen interest in Software Engineering. My thesis focused on developing a web application for detecting strawberry leaf diseases using machine learning. I have further pursued this interest by completing the Fundamental Software Engineering course at RevoU, equipping me with technical skills that complement my expertise in business and technology.</p>
-  </section>
-
-  <section id="skills" class="skills">
-    <h2>My Skills</h2>
-    <!-- Skill 1 -->
-  <div class="skill">
-    <svg width="120" height="120">
-      <defs>
-        <linearGradient id="grad" x1="1" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#00e0ff"/>
-          <stop offset="100%" stop-color="#7f00ff"/>
-        </linearGradient>
-      </defs>
-      <circle class="circle-bg" cx="60" cy="60" r="50"/>
-      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:90"/>
-      <text x="60" y="65" text-anchor="middle" class="value">4.5</text>
-    </svg>
-    <div class="label">Communication</div>
-  </div>
-  <!-- Skill 2 -->
-  <div class="skill">
-    <svg width="120" height="120">
-      <circle class="circle-bg" cx="60" cy="60" r="50"/>
-      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:80"/>
-      <text x="60" y="65" text-anchor="middle" class="value">4.0</text>
-    </svg>
-    <div class="label">Relationship Building</div>
-  </div>
-   <!-- Skill 3 -->
-  <div class="skill">
-    <svg width="120" height="120">
-      <circle class="circle-bg" cx="60" cy="60" r="50"/>
-      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:84"/>
-      <text x="60" y="65" text-anchor="middle" class="value">4.2</text>
-    </svg>
-    <div class="label">Problem Solving</div>
-  </div>
-   <!-- Skill 4 -->
-  <div class="skill">
-    <svg width="120" height="120">
-      <circle class="circle-bg" cx="60" cy="60" r="50"/>
-      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:80"/>
-      <text x="60" y="65" text-anchor="middle" class="value">4.0</text>
-    </svg>
-    <div class="label">Market & Industry Insight</div>
-  </div>
-   <!-- Skill 5 -->
-  <div class="skill">
-    <svg width="120" height="120">
-      <circle class="circle-bg" cx="60" cy="60" r="50"/>
-      <circle class="circle-progress" cx="60" cy="60" r="50" style="--percent:90"/>
-      <text x="60" y="65" text-anchor="middle" class="value">4.5</text>
-    </svg>
-    <div class="label">Collaboration & Internal Coordination</div>
-  </div>
-  </section>
-
-  <div class="container">
-   <section id="performa" class="performa">
-    <!-- Left: Language -->
-     <div class="language">
-      <h2>Language</h2>
-      <div class="lang-skill">
-        <div class="label">
-          <span>Indonesia</span>
-          <span>Fluent</span>
+          <div class="profile-content">
+            <div class="profile-text">
+              <h2>Hello, I’m</h2>
+              <h1>Nabilah Nur Hazimah</h1>
+              <p>Business Development</p>
+              <a
+                href="https://www.linkedin.com/in/abilanr/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >My LinkedIn</a
+              >
+            </div>
+            <div class="profile-img">
+              <img
+                src="assets/img/aku.png"
+                alt="Profile Photo Nabilah Nur Hazimah"
+              />
+            </div>
+          </div>
         </div>
-        <div class="bar">
-          <div class="fill" style="width: 100%;"></div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-img">
+              <img src="assets/img/me.jpg" alt="Photo of Nabilah" />
+            </div>
+            <div class="about-text">
+              <h2 class="about-title">About Me</h2>
+              <p>
+                I am a graduate of the Bachelor’s program in Mechanical and
+                Biosystems Engineering who was actively involved in
+                organizational and entrepreneurial activities during my studies.
+                Currently, I am developing my competencies in Business
+                Development through intensive training at MySkill and internship
+                simulations at Forage. These programs help me learn market
+                development strategies, sales planning, and client relationship
+                management. In the future, I aspire to pursue a career as an
+                Account Manager or Business Development Specialist. I believe my
+                organizational experience, independent business management, and
+                professional training will serve as strong assets to contribute
+                meaningfully in the workplace. Additionally, I have a keen
+                interest in Software Engineering. My thesis focused on
+                developing a web application for detecting strawberry leaf
+                diseases using machine learning. I have further pursued this
+                interest by completing the Fundamental Software Engineering
+                course at RevoU, equipping me with technical skills that
+                complement my expertise in business and technology.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    <div class="lang-skill">
-        <div class="label">
-          <span>English</span>
-          <span>Good</span>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2>My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill">
+              <svg width="120" height="120">
+                <defs>
+                  <linearGradient id="grad" x1="1" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#00e0ff" />
+                    <stop offset="100%" stop-color="#7f00ff" />
+                  </linearGradient>
+                </defs>
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-progress"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  style="--percent: 90"
+                />
+                <text x="60" y="65" text-anchor="middle" class="value">
+                  4.5
+                </text>
+              </svg>
+              <div class="label">Communication</div>
+            </div>
+            <div class="skill">
+              <svg width="120" height="120">
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-progress"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  style="--percent: 80"
+                />
+                <text x="60" y="65" text-anchor="middle" class="value">
+                  4.0
+                </text>
+              </svg>
+              <div class="label">Relationship Building</div>
+            </div>
+            <div class="skill">
+              <svg width="120" height="120">
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-progress"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  style="--percent: 84"
+                />
+                <text x="60" y="65" text-anchor="middle" class="value">
+                  4.2
+                </text>
+              </svg>
+              <div class="label">Problem Solving</div>
+            </div>
+            <div class="skill">
+              <svg width="120" height="120">
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-progress"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  style="--percent: 80"
+                />
+                <text x="60" y="65" text-anchor="middle" class="value">
+                  4.0
+                </text>
+              </svg>
+              <div class="label">Market & Industry Insight</div>
+            </div>
+            <div class="skill">
+              <svg width="120" height="120">
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-progress"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  style="--percent: 90"
+                />
+                <text x="60" y="65" text-anchor="middle" class="value">
+                  4.5
+                </text>
+              </svg>
+              <div class="label">Collaboration & Internal Coordination</div>
+            </div>
+          </div>
         </div>
-        <div class="bar">
-          <div class="fill" style="width: 80%;"></div>
+      </section>
+
+      <section id="performa" class="performa">
+        <div class="container">
+          <div class="language">
+            <h2>Language</h2>
+            <div class="lang-skill">
+              <div class="label">
+                <span>Indonesia</span>
+                <span>Fluent</span>
+              </div>
+              <div class="bar">
+                <div class="fill" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="lang-skill">
+              <div class="label">
+                <span>English</span>
+                <span>Good</span>
+              </div>
+              <div class="bar">
+                <div class="fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="studies">
+            <h2>Studies</h2>
+            <div class="study-item">
+              <div class="icon"></div>
+              <div class="info">
+                <strong>IPB University</strong>
+                <p>2019</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-     <!-- Right: Studies -->
-     <div class="studies">
-      <h2>Studies</h2>
+      </section>
 
-      <div class="study-item">
-        <div class="icon"></div>
-        <div class="info">
-          <strong>IPB University</strong>
-          <p>2019</p>
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2>Organizational Experience</h2>
+          <div class="cards">
+            <div class="card">
+              <img src="assets/img/bemf.jpg" alt="BEM Logo" />
+              <h3>Faculty Student Executive Board (BEM)</h3>
+              <p>Staff Business and Partnership Division (2020)</p>
+            </div>
+            <div class="card">
+              <img src="assets/img/hima.jpg" alt="HIMATETA Logo" />
+              <h3>
+                Mechanical and Biosystems Engineering Student Association
+                (Himateta)
+              </h3>
+              <p>Staff Inventory and Entrepreneurship Division (2021)</p>
+            </div>
+          </div>
+          <h2>Volunteering</h2>
+          <div class="cards">
+            <div class="card">
+              <img src="assets/img/mpkmb.jpg" alt="MPKMB 57" />
+              <h3>Campus Orientation Committee (MPKMB 57)</h3>
+              <p>Staff Design Decoration Branding (2020)</p>
+            </div>
+            <div class="card">
+              <img src="assets/img/mmd.jpg" alt="TechnoF 57" />
+              <h3>Faculty Orientation Committee (TechnoF 57)</h3>
+              <p>Staff Multi Media and Decoration (2021)</p>
+            </div>
+            <div class="card">
+              <img src="assets/img/redsbim.jpg" alt="Redsbim" />
+              <h3>Redsbim (Webinars and Training)</h3>
+              <p>Supervisor, Secretary (2021)</p>
+            </div>
+          </div>
+          <h2>Independent Business</h2>
+          <div class="cards">
+            <div class="card">
+              <img
+                src="assets/img/bilathrift.jpg"
+                alt="Online thrift shop logo"
+              />
+              <h3>Online thrift shop (@bilathrift.id)</h3>
+              <p>Owner (2020)</p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/img/tokoyaya.jpg"
+                alt="Digital product reseller logo"
+              />
+              <h3>Digital product reseller (@toko_yaya)</h3>
+              <p>Owner (2025)</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    </section>
+      </section>
 
-  <section id="experiance" class="experiance">
-    <h2>Organizational Experiance</h2>
-    <div class="cards">
-      <!-- Kartu 1 -->
-      <div class="card">
-        <img src="assets/img/bemf.jpg" alt="BEM">
-        <h3>Faculty Student Executive Board (BEM)</h3>
-        <p>Staff Business and Partnership Division (2020)</p>
-      </div>
-      <!-- Kartu 2 -->
-      <div class="card">
-        <img src="assets/img/hima.jpg" alt="HIMATETA">
-        <h3>Mechanical and Biosystems Engineering Student Association (Himateta)</h3>
-        <p>Staff Inventory and Entrepreneurship Division (2021)</p>
-      </div>
-    </div>
-       <h2>Volunteering</h2>
-    <div class="cards">
-      <!-- Kartu 1 -->
-      <div class="card">
-        <img src="assets/img/mpkmb.jpg" alt="store">
-        <h3>Campus Orientation Committee (MPKMB 57)</h3>
-        <p>Staff Design Decoration Branding (2020)</p>
-      </div>
-      <!-- Kartu 2 -->
-       <div class="card">
-        <img src="assets/img/mmd.jpg" alt="store">
-        <h3>Faculty Orientation Committee (TechnoF 57)</h3>
-        <p>Staff Multi Media and Decoration (2021)</p>
-      </div>
-      <!--Kartu 3-->
-      <div class="card">
-        <img src="assets/img/redsbim.jpg" alt="HIMATETA">
-        <h3>Redsbim (Webinars and Training on Business, Digital Marketing, and Stocks)</h3>
-        <p>Supervisor, Secretary (2021)</p>
-      </div>
-    </div>
-    <h2>independent Business</h2>
-    <div class="cards">
-      <!-- Kartu 1 -->
-      <div class="card">
-        <img src="assets/img/bilathrift.jpg" alt="thrift">
-        <h3>Online thrift shop (@bilathrift.id)</h3>
-        <p>Owner (2020)</p>
-      </div>      
-      <!-- Kartu 2 -->
-      <div class="card">
-        <img src="assets/img/tokoyaya.jpg" alt="store">
-        <h3>Digital product reseller (@toko_yaya)</h3>
-        <p>Owner (2025)</p>
-      </div>
-    </div>
-  </section>
+      <section class="download-section">
+        <div class="container">
+          <h2>Interested In My Experience?</h2>
+          <p>Download My CV To Know More About Me</p>
+          <a href="cvku.pdf" class="btn-cv" download>Download CV</a>
+        </div>
+      </section>
 
-   <section class="download-section">
-    <div class="container">
-    <h1>Interested In My Experiance</h1>
-    <p>Download My CV To Know More About Me</p>
-    <a href="cvku.pdf" class="btn-cv" download>Download CV</a>
-    </div>
-  </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required/>
-      <input type="email" placeholder="Your Email" required/>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <img src="assets/instagram.svg" alt="" />
 
-  <footer>
-    <p>© 2025 Nabilah Nur Hazimah. All rights reserved.</p>
+    <footer>
+      <div class="container">
+        <p>© 2025 Nabilah Nur Hazimah. All rights reserved.</p>
+      </div>
+    </footer>
 
-  </footer>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
