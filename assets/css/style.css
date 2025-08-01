@@ -300,7 +300,8 @@ svg text{
 }
 .performa{
   display: flex;
-  gap: 500px;
+  padding: 2rem;
+  gap: 200px;
   flex-wrap: wrap;
   font: var(--main-font);
   color: var(--main-color);
