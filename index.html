@@ -29,18 +29,26 @@
       <nav class="navbar">
         <div class="container nav-wrapper">
           <a class="logo">Nabilah</a>
-          <input type="checkbox" id="hamburger-toggle" />
-          <label for="hamburger-toggle" class="hamburger-menu">
-            <span></span>
-          </label>
+
           <div class="menu-wrapper">
             <ul class="menu">
-              <li><a href="#profile" class="menu-link active">Home</a></li>
+              <li><a href="#profile" class="menu-link-active">Home</a></li>
               <li><a href="#experience" class="menu-link">Portfolio</a></li>
               <li><a href="#contact" class="menu-link">Contact</a></li>
             </ul>
           </div>
-          <div class="menu-toggle bx bxs-list-alt"></div>
+          <!--mobile-->
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <!-- Menu yang muncul saat hamburger diklik -->
+          <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="#profile" class="menu-link-active">Home</a></li>
+            <li><a href="#experience" class="menu-link">Portfolio</a></li>
+            <li><a href="#contact" class="menu-link">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -50,20 +58,23 @@
         <div class="container">
           <div class="profile-content">
             <div class="profile-text">
-              <h2>Hello, I’m</h2>
-              <h1>Nabilah Nur Hazimah</h1>
+              <p>W E L C O M E</p>
+              <h2>I’m, Nabilah</h2>
+              <h2>Nur Hazimah</h2>
               <p>Business Development</p>
-              <a
-                href="cvku.pdf"
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Download CV</a
-              >
+              <div class="btn-container">
+                <a
+                  href="cvku.pdf"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download CV</a
+                >
+              </div>
             </div>
             <div class="profile-img">
               <img
-                src="assets/img/aku.png"
+                src="assets/img/aku.jpg"
                 alt="Profile Photo Nabilah Nur Hazimah"
               />
             </div>
@@ -106,26 +117,26 @@
 
       <section id="skills" class="skills">
         <div class="container">
-          <h2>My Skills</h2>
+          <h2 class="skills-title">My Skills</h2>
           <div class="skills-grid">
             <!-- Skill 1 -->
             <div class="skill">
-              <svg width="120" height="120">
+              <svg width="220" height="220">
                 <defs>
                   <linearGradient id="grad" x1="1" y1="0" x2="0" y2="1">
                     <stop offset="0%" stop-color="#00e0ff" />
                     <stop offset="100%" stop-color="#7f00ff" />
                   </linearGradient>
                 </defs>
-                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle class="circle-bg" cx="130" cy="130" r="75.9" />
                 <circle
                   class="circle-progress"
-                  cx="60"
-                  cy="60"
-                  r="50"
+                  cx="130"
+                  cy="130"
+                  r="75.9"
                   style="--percent: 90"
                 />
-                <text x="60" y="65" text-anchor="middle" class="value">
+                <text x="130" y="137" text-anchor="middle" class="value">
                   4.5
                 </text>
               </svg>
@@ -133,67 +144,70 @@
             </div>
             <!-- Skill 2 -->
             <div class="skill">
-              <svg width="120" height="120">
-                <circle class="circle-bg" cx="60" cy="60" r="50" />
+              <svg width="220" height="220">
+                <circle class="circle-bg" cx="130" cy="130" r="75.9" />
                 <circle
                   class="circle-progress"
-                  cx="60"
-                  cy="60"
-                  r="50"
+                  cx="130"
+                  cy="130"
+                  r="75.9"
                   style="--percent: 80"
                 />
-                <text x="60" y="65" text-anchor="middle" class="value">
+                <text x="130" y="137" text-anchor="middle" class="value">
                   4.0
                 </text>
               </svg>
               <div class="label">Relationship Building</div>
             </div>
+
             <!-- Skill 3 -->
             <div class="skill">
-              <svg width="120" height="120">
-                <circle class="circle-bg" cx="60" cy="60" r="50" />
+              <svg width="220" height="220">
+                <circle class="circle-bg" cx="130" cy="130" r="75.9" />
                 <circle
                   class="circle-progress"
-                  cx="60"
-                  cy="60"
-                  r="50"
+                  cx="130"
+                  cy="130"
+                  r="75.9"
                   style="--percent: 84"
                 />
-                <text x="60" y="65" text-anchor="middle" class="value">
+                <text x="130" y="137" text-anchor="middle" class="value">
                   4.2
                 </text>
               </svg>
               <div class="label">Problem Solving</div>
             </div>
+
             <!-- Skill 4 -->
             <div class="skill">
-              <svg width="120" height="120">
-                <circle class="circle-bg" cx="60" cy="60" r="50" />
+              <svg width="220" height="220">
+                <circle class="circle-bg" cx="130" cy="130" r="75.9" />
                 <circle
                   class="circle-progress"
-                  cx="60"
-                  cy="60"
-                  r="50"
+                  cx="130"
+                  cy="130"
+                  r="75.9"
                   style="--percent: 80"
                 />
-                <text x="60" y="65" text-anchor="middle" class="value">
+                <text x="130" y="137" text-anchor="middle" class="value">
                   4.0
                 </text>
               </svg>
               <div class="label">Market & Industry Insight</div>
             </div>
+
             <!-- Skill 5 -->
             <div class="skill">
-              <svg width="120" height="120">
-                <circle class="circle-bg" cx="60" cy="60" r="50" />
+              <svg width="220" height="220">
+                <circle class="circle-bg" cx="130" cy="130" r="75.9" />
                 <circle
                   class="circle-progress"
-                  cx="60"
-                  cy="60"
-                  r="50"
+                  cx="130"
+                  cy="130"
+                  r="75.9"
                   style="--percent: 90"
                 />
-                <text x="60" y="65" text-anchor="middle" class="value">
+                <text x="130" y="137" text-anchor="middle" class="value">
                   4.5
                 </text>
               </svg>
@@ -204,38 +218,53 @@
       </section>
 
       <section id="performa" class="performa">
-        <div class="performa-header">
-          <div class="language">
-            <h2>Language</h2>
-            <div class="lang-skill">
-              <div class="label">
-                <span>Indonesia</span>
+        <div class="performa-wrapper">
+          <div class="performa-header">
+            <div class="language">
+              <h2>Language</h2>
+              <div class="lang-skill">
+                <div class="label">
+                  <span>Indonesia</span>
+                </div>
                 <span class="level">Fluent</span>
+                <div class="bar">
+                  <div class="fill" style="width: 100%"></div>
+                </div>
               </div>
-              <div class="bar">
-                <div class="fill" style="width: 100%"></div>
-              </div>
-            </div>
-            <div class="lang-skill">
-              <div class="label">
-                <span>English</span>
+              <div class="lang-skill">
+                <div class="label">
+                  <span>English</span>
+                </div>
                 <span class="level">Good</span>
-              </div>
-              <div class="bar">
-                <div class="fill" style="width: 80%"></div>
+                <div class="bar">
+                  <div class="fill" style="width: 80%"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="performa-header">
-          <div class="studies">
-            <h2>Studies</h2>
-            <div class="study-item">
-              <div class="icon"></div>
-              <div class="info">
-                <strong>IPB University</strong>
-                <p>2019</p>
+          <div class="performa-header">
+            <div class="studies">
+              <h2>Studies</h2>
+              <!-- revou -->
+              <div class="study-item">
+                <div class="icon">
+                  <img src="assets/img/revou.png" alt="logo revou" />
+                </div>
+                <div class="info">
+                  <strong>RevoU</strong>
+                  <p>2025</p>
+                </div>
+              </div>
+              <!-- ipb -->
+              <div class="study-item">
+                <div class="icon">
+                  <img src="assets/img/ipb.png" alt="logo IPB" />
+                </div>
+                <div class="info">
+                  <strong>IPB University</strong>
+                  <p>2019</p>
+                </div>
               </div>
             </div>
           </div>
@@ -244,48 +273,51 @@
 
       <section id="experience" class="experience">
         <div class="container">
-          <h2>Organizational Experience</h2>
+          <div class="experience-heading">
+            <h2>My Experience</h2>
+          </div>
+          <h3>Organizational Experience</h3>
           <div class="cards">
             <div class="card">
               <img src="assets/img/bemf.jpg" alt="BEM Logo" />
-              <h3>Faculty Student Executive Board (BEM)</h3>
+              <h4>Faculty Student Executive Board (BEM)</h4>
               <p>Staff Business and Partnership Division (2020)</p>
             </div>
             <div class="card">
               <img src="assets/img/hima.jpg" alt="HIMATETA Logo" />
-              <h3>
+              <h4>
                 Mechanical and Biosystems Engineering Student Association
                 (Himateta)
-              </h3>
+              </h4>
               <p>Staff Inventory and Entrepreneurship Division (2021)</p>
             </div>
           </div>
-          <h2>Volunteering</h2>
+          <h3>Volunteering</h3>
           <div class="cards">
             <div class="card">
               <img src="assets/img/mpkmb.jpg" alt="MPKMB 57" />
-              <h3>Campus Orientation Committee (MPKMB 57)</h3>
+              <h4>Campus Orientation Committee (MPKMB 57)</h4>
               <p>Staff Design Decoration Branding (2020)</p>
             </div>
             <div class="card">
               <img src="assets/img/mmd.jpg" alt="TechnoF 57" />
-              <h3>Faculty Orientation Committee (TechnoF 57)</h3>
+              <h4>Faculty Orientation Committee (TechnoF 57)</h4>
               <p>Staff Multi Media and Decoration (2021)</p>
             </div>
             <div class="card">
               <img src="assets/img/redsbim.jpg" alt="Redsbim" />
-              <h3>Redsbim (Webinars and Training)</h3>
+              <h4>Redsbim (Webinars and Training)</h4>
               <p>Supervisor, Secretary (2021)</p>
             </div>
           </div>
-          <h2>Independent Business</h2>
+          <h3>Independent Business</h3>
           <div class="cards">
             <div class="card">
               <img
                 src="assets/img/bilathrift.jpg"
                 alt="Online thrift shop logo"
               />
-              <h3>Online thrift shop (@bilathrift.id)</h3>
+              <h4>Online thrift shop (@bilathrift.id)</h4>
               <p>Owner (2020)</p>
             </div>
             <div class="card">
@@ -293,7 +325,7 @@
                 src="assets/img/tokoyaya.jpg"
                 alt="Digital product reseller logo"
               />
-              <h3>Digital product reseller (@toko_yaya)</h3>
+              <h4>Digital product reseller (@toko_yaya)</h4>
               <p>Owner (2025)</p>
             </div>
           </div>
@@ -312,10 +344,12 @@
         <div class="container">
           <div style="width: 100%">
             <h1>Contact</h1>
-            <p class="description">
-              Interested in my CV or portfolio? Or perhaps have questions?
-              Contact me, and I'll be happy to assist you.
-            </p>
+            <div class="description">
+              <p>
+                Interested in my CV or portfolio? Or perhaps have questions?
+                Contact me, and I'll be happy to assist you.
+              </p>
+            </div>
           </div>
 
           <div class="column">
@@ -342,15 +376,31 @@
           <div class="column">
             <h3>Say hello</h3>
             <form action="#" method="POST">
-              <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="phone" placeholder="Telephone" />
-              <input type="email" name="email" placeholder="Email" required />
-              <textarea
-                name="comment"
-                placeholder="Comment"
-                rows="4"
-                required
-              ></textarea>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telephone</label>
+                <input type="text" name="phone" placeholder="Telephone" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea
+                  name="comment"
+                  placeholder="Comment"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
               <input type="submit" value="Submit" />
             </form>
           </div>
