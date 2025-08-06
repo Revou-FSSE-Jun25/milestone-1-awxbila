@@ -25,4 +25,4 @@ JavaScript – Smooth scrolling and basic DOM interaction.
 GitHub – Version control and source code hosting.
 GitHub Pages – For deployment and public access.
 Getting Started
-You can access the deployed website here:
+You can access the deployed website here: http://nabilahporfo.my.id/
